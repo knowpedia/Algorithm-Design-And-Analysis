@@ -70,6 +70,37 @@
                     </ul>
                 </li>
             </ul>
+            <ul :active='pagename=="greedy-algorithm"?"yes":"no"'>
+                <li>
+                    <h3 @click='openPage("greedy-algorithm","top")'>
+                        贪心算法
+                    </h3>
+                    <ul>
+                        <li>
+                            <h4 @click='doScroll("jbys")'>
+                                基本要素
+                            </h4>
+                            <ul>
+                                <li>
+                                    <h4 @click='doScroll("txxzxz")'>
+                                        贪心选择性质
+                                    </h4>
+                                </li>
+                                <li>
+                                    <h4 @click='doScroll("zuzkgxz")'>
+                                        最优子结构性质
+                                    </h4>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <h4 @click='doScroll("hdapwt")'>
+                                活动安排问题
+                            </h4>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
             <a href="https://github.com/knowpedia/Algorithm-Design-And-Analysis" target="_blank">Fork Me On Github</a>
         </div>
     </div>
@@ -86,6 +117,7 @@
         idea: () => import('./idea.paper'),
         "recursion-and-divide": () => import('./recursion-and-divide.paper'),
         "dynamic-programming": () => import('./dynamic-programming.paper'),
+        "greedy-algorithm": () => import('./greedy-algorithm.paper'),
     };
 
     export default {

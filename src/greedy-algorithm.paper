@@ -1,0 +1,61 @@
+<template>
+    <div class='doc-view' id='root-view'>
+        <header id="fixed-top">贪心算法</header>
+        <h1 id='fixed-jbys'>
+            基本要素
+        </h1>
+        <p>
+            算法的主体思路就是每次做的选择都是当前状态下局部最好的选择，这种策略并不总是能获得最优解。
+        </p>
+        <p>
+            怎么知道是否可以用贪心算法解此问题，以及能否得到问题的最优解呢？这类问题一般都具有两个重要的性质：
+            <span class="important">贪心选择性质</span>和
+            <span class="important">最优子结构性质</span>。
+        </p>
+        <h2 id='fixed-txxzxz'>
+            贪心选择性质
+        </h2>
+        <p>
+            也就是所求问题的整体最优解可以通过一系列局部最优的选择，即贪心选择来达到。
+        </p>
+        <h2 id='fixed-zuzkgxz'>
+            最优子结构性质
+        </h2>
+        <p>
+            当一个问题的最优解包含其子问题的最优解时，称此问题具有最优子结构性质。
+        </p>
+        <h1 id='fixed-hdapwt'>
+            活动安排问题
+        </h1>
+        <p>
+            设有n个活动的集合{active(1),active(2),...,active(n)}，其中，每个活动都有一个开始和结束时间，需要知道的是，在同一时刻，只有一个活动可以进行，如何安排，可以保证最多的活动个数。
+        </p>
+        <p>
+            依据贪心算法的思想，只需要把所有任务的结束时间按照非减序排列，然后，依次选择可行且最早结束的活动即可：
+        </p>
+        <pre q-code>
+for (var i = 1; i < active.length; i++) {
+
+    // 如果当前活动的开始时间不小于上一个活动的结束时间
+    if (active[i][0] >= active[preActive][1]) {
+        active[i][2] = true;
+        preActive = i;
+        count += 1;
+    }
+
+    // 否则就不可行
+    else {
+        active[i][2] = false;
+    }
+}
+        </pre>
+        <p>
+            完整的代码请
+            <a target="_blank" class='link'
+                href="https://github.com/hai2007/algorithm.js/blob/master/workbook/%E8%B4%AA%E5%BF%83%E7%AE%97%E6%B3%95/no1-%E6%B4%BB%E5%8A%A8%E5%AE%89%E6%8E%92%E9%97%AE%E9%A2%98.js">
+                点击此处
+            </a>
+            进行查看。
+        </p>
+    </div>
+</template>

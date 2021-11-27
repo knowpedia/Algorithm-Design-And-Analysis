@@ -29,12 +29,10 @@
 
 
 .doc-view>h2 {
-    font-size: .16rem;
-    border-bottom: 1px solid gray;
+    font-size: .15rem;
     padding: .1rem 0;
     margin-top: .3rem;
     font-weight: 800;
-    color: red;
 }
 
 .doc-view>p {
@@ -67,7 +65,7 @@
     color: #000000;
 }
 
-.doc-view .link{
+.doc-view .link {
     text-decoration: underline;
     margin: 0 10px;
 }
