@@ -66,3 +66,8 @@
     font-size: .13rem;
     color: #000000;
 }
+
+.doc-view .link{
+    text-decoration: underline;
+    margin: 0 10px;
+}

@@ -10,6 +10,7 @@ import "./style/doc.css";
 import "./style/menu.css";
 
 import mathFormula from './Service/mathFormula'; Knowpedia.use(mathFormula);
+import qCode from 'sprout-ui/quick-paper/directive/q-code';Knowpedia.directive('qCode', qCode);
 
 import App from './App.paper';
 

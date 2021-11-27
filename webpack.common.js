@@ -19,7 +19,12 @@ module.exports = {
         }, {
             test: /\.js$/,
             loader: ['babel-loader'],
-            exclude: /node_modules/
+            exclude: function (modulePath) {
+                return (
+                    /node_modules/.test(modulePath) &&
+                    !/sprout\-ui/.test(modulePath)
+                );
+            }
         }, {
             test: /\.(png|jpg|jpeg|gif|bmp|svg)$/,
             loader: [{

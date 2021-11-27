@@ -27,6 +27,25 @@
                     </ul>
                 </li>
             </ul>
+            <ul :active='pagename=="recursion-and-divide"?"yes":"no"'>
+                <li>
+                    <h3 @click='openPage("recursion-and-divide","top")'>
+                        递归与分治策略
+                    </h3>
+                    <ul>
+                        <li>
+                            <h4 @click='doScroll("dgdgl")'>
+                                递归的概念
+                            </h4>
+                        </li>
+                        <li>
+                            <h4 @click='doScroll("kspx")'>
+                                快速排序
+                            </h4>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
             <a href="https://github.com/knowpedia/Algorithm-Design-And-Analysis" target="_blank">Fork Me On Github</a>
         </div>
     </div>
@@ -40,7 +59,8 @@
     import fixedScroll from './Service/fixedScroll.js';
 
     let pages = {
-        idea: () => import('./idea.paper')
+        idea: () => import('./idea.paper'),
+        "recursion-and-divide": () => import('./recursion-and-divide.paper')
     };
 
     export default {
