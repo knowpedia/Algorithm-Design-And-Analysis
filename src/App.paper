@@ -46,6 +46,30 @@
                     </ul>
                 </li>
             </ul>
+            <ul :active='pagename=="dynamic-programming"?"yes":"no"'>
+                <li>
+                    <h3 @click='openPage("dynamic-programming","top")'>
+                        动态规划
+                    </h3>
+                    <ul>
+                        <li>
+                            <h4 @click='doScroll("sfsx")'>
+                                算法思想
+                            </h4>
+                        </li>
+                        <li>
+                            <h4 @click='doScroll("jzlcwt")'>
+                                矩阵连乘问题
+                            </h4>
+                        </li>
+                        <li>
+                            <h4 @click='doScroll("zcggzxl")'>
+                                最长公共子序列
+                            </h4>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
             <a href="https://github.com/knowpedia/Algorithm-Design-And-Analysis" target="_blank">Fork Me On Github</a>
         </div>
     </div>
@@ -60,7 +84,8 @@
 
     let pages = {
         idea: () => import('./idea.paper'),
-        "recursion-and-divide": () => import('./recursion-and-divide.paper')
+        "recursion-and-divide": () => import('./recursion-and-divide.paper'),
+        "dynamic-programming": () => import('./dynamic-programming.paper'),
     };
 
     export default {

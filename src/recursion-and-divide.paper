@@ -92,7 +92,7 @@ function quickSort(begin, end) {
 }
         </pre>
         <p>
-            完成的代码请
+            完整的代码请
             <a target="_blank" class='link'
                 href="https://github.com/hai2007/algorithm.js/blob/master/workbook/%E9%80%92%E5%BD%92%E4%B8%8E%E5%88%86%E6%B2%BB%E7%AD%96%E7%95%A5/no1-%E5%BF%AB%E9%80%9F%E6%8E%92%E5%BA%8F.js">
                 点击此处
