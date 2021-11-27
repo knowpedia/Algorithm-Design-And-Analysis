@@ -1,6 +1,6 @@
 {
   "name": "algorithm-design-and-analysis",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "算法设计与分析，包括算法空间和时间复杂度计算、分治递归、回溯法、分支限界、贪心算法等算法说明和相关演示等知识。",
   "scripts": {
     "start": "npm install && npm run dev",
@@ -12,7 +12,7 @@
     "url": "git+https://github.com/knowpedia/Algorithm-Design-And-Analysis.git"
   },
   "keywords": [
-    "the-wealth-of-nations",
+    "algorithm-design-and-analysis",
     "knowpedia"
   ],
   "author": "你好2007",
@@ -20,11 +20,11 @@
   "bugs": {
     "url": "https://github.com/knowpedia/Algorithm-Design-And-Analysis/issues"
   },
-  "homepage": "https://github.com/knowpedia/Algorithm-Design-And-Analysis#readme",
+  "homepage": "https://knowpedia.github.io/Algorithm-Design-And-Analysis",
   "dependencies": {
     "@hai2007/polyfill": "0.1.1",
     "@hai2007/style": "^0.3.0",
-    "@hai2007/tool": "^0.6.6",
+    "@hai2007/tool": "^1.0.0",
     "knowpedia": "0.3.0"
   },
   "devDependencies": {

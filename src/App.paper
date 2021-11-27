@@ -6,8 +6,25 @@
             <ul :active='pagename=="idea"?"yes":"no"'>
                 <li>
                     <h3 @click='openPage("idea","top")'>
-                        算法的基本概念
+                        算法引论
                     </h3>
+                    <ul>
+                        <li>
+                            <h4 @click='doScroll("sfycx")'>
+                                算法与程序
+                            </h4>
+                        </li>
+                        <li>
+                            <h4 @click='doScroll("bdsfdcxjz")'>
+                                表达算法的抽象机制
+                            </h4>
+                        </li>
+                        <li>
+                            <h4 @click='doScroll("sffzxfx")'>
+                                算法复杂性分析
+                            </h4>
+                        </li>
+                    </ul>
                 </li>
             </ul>
             <a href="https://github.com/knowpedia/Algorithm-Design-And-Analysis" target="_blank">Fork Me On Github</a>
