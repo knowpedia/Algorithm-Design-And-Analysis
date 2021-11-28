@@ -127,6 +127,25 @@
                     </ul>
                 </li>
             </ul>
+            <ul :active='pagename=="branch-and-bound"?"yes":"no"'>
+                <li>
+                    <h3 @click='openPage("branch-and-bound","top")'>
+                        分支限界法
+                    </h3>
+                    <ul>
+                        <li>
+                            <h4 @click='doScroll("sfsx")'>
+                                算法思想
+                            </h4>
+                        </li>
+                        <li>
+                            <h4 @click='doScroll("zzwt")'>
+                                装载问题
+                            </h4>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
             <a href="https://github.com/knowpedia/Algorithm-Design-And-Analysis" target="_blank">Fork Me On Github</a>
         </div>
     </div>
@@ -144,7 +163,8 @@
         "recursion-and-divide": () => import('./recursion-and-divide.paper'),
         "dynamic-programming": () => import('./dynamic-programming.paper'),
         "greedy-algorithm": () => import('./greedy-algorithm.paper'),
-        "backtracking-method": () => import('./backtracking-method.paper')
+        "backtracking-method": () => import('./backtracking-method.paper'),
+        "branch-and-bound": () => import('./branch-and-bound.paper')
     };
 
     export default {
