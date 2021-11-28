@@ -101,6 +101,32 @@
                     </ul>
                 </li>
             </ul>
+            <ul :active='pagename=="backtracking-method"?"yes":"no"'>
+                <li>
+                    <h3 @click='openPage("backtracking-method","top")'>
+                        回溯法
+                    </h3>
+                    <ul>
+                        <li>
+                            <h4 @click='doScroll("sfsx")'>
+                                算法思想
+                            </h4>
+                        </li>
+                        <li>
+                            <h4 @click='doScroll("01bbwt")'>
+                                0-1背包问题
+                            </h4>
+                            <ul>
+                                <li>
+                                    <h4 @click='doScroll("01bbwt-xcdg")'>
+                                        消除递归
+                                    </h4>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
             <a href="https://github.com/knowpedia/Algorithm-Design-And-Analysis" target="_blank">Fork Me On Github</a>
         </div>
     </div>
@@ -118,6 +144,7 @@
         "recursion-and-divide": () => import('./recursion-and-divide.paper'),
         "dynamic-programming": () => import('./dynamic-programming.paper'),
         "greedy-algorithm": () => import('./greedy-algorithm.paper'),
+        "backtracking-method": () => import('./backtracking-method.paper')
     };
 
     export default {
