@@ -1,4 +1,7 @@
-import Knowpedia from 'knowpedia';
+import QuickPaper from 'quick-paper';
+import MathFormula from 'knowpedia/mathFormula/index';
+
+QuickPaper.use(MathFormula);
 
 // 兼容文件
 import '@hai2007/polyfill/Promise.js';
@@ -9,13 +12,12 @@ import './style/style.css';
 import "./style/doc.css";
 import "./style/menu.css";
 
-import mathFormula from './Service/mathFormula'; Knowpedia.use(mathFormula);
-import qCode from 'sprout-ui/quick-paper/directive/q-code';Knowpedia.directive('qCode', qCode);
+import qCode from 'sprout-ui/quick-paper/directive/q-code'; QuickPaper.directive('qCode', qCode);
 
 import App from './App.paper';
 
 // 创建对象
-window.knowpedia = new Knowpedia({
+window.quickPaper = new QuickPaper({
 
     // 挂载点
     el: document.getElementById('root'),
