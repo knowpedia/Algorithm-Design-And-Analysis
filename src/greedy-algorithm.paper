@@ -52,7 +52,7 @@ for (var i = 1; i < active.length; i++) {
         <p>
             完整的代码请
             <a target="_blank" class='link'
-                href="https://github.com/hai2007/algorithm.js/blob/master/workbook/%E8%B4%AA%E5%BF%83%E7%AE%97%E6%B3%95/no1-%E6%B4%BB%E5%8A%A8%E5%AE%89%E6%8E%92%E9%97%AE%E9%A2%98.js">
+                href="https://github.com/agile-contrib/algorithm-practice/tree/master/1.【贪心算法】活动安排问题">
                 点击此处
             </a>
             进行查看。

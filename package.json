@@ -1,6 +1,6 @@
 {
   "name": "algorithm-design-and-analysis",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "算法设计与分析，包括算法空间和时间复杂度计算、分治递归、回溯法、分支限界、贪心算法等算法说明和相关演示等知识。",
   "scripts": {
     "dev": "etcpack_dev --config etcpack.dev.js",

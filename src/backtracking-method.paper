@@ -54,14 +54,6 @@ function doCalc(deep,_volume){
     return _sub_1_result>_sub_0_result?'1':'0';
 }
         </pre>
-        <p>
-            完整的代码请
-            <a target="_blank" class='link'
-                href="https://github.com/hai2007/algorithm.js/blob/master/workbook/%E5%9B%9E%E6%BA%AF%E6%B3%95/no1-0-1%E8%83%8C%E5%8C%85%E9%97%AE%E9%A2%98.js">
-                点击此处
-            </a>
-            进行查看。
-        </p>
         <h2 id='fixed-01bbwt-xcdg'>
             消除递归
         </h2>
@@ -74,7 +66,7 @@ function doCalc(deep,_volume){
         <p>
             完整的代码请
             <a target="_blank" class='link'
-                href="https://github.com/hai2007/algorithm.js/blob/master/workbook/%E5%9B%9E%E6%BA%AF%E6%B3%95/no2-0-1%E8%83%8C%E5%8C%85%E9%97%AE%E9%A2%98%EF%BC%88%E6%B6%88%E9%99%A4%E9%80%92%E5%BD%92%EF%BC%89.js">
+                href="https://github.com/agile-contrib/algorithm-practice/tree/master/6.【回溯法】0-1背包问题">
                 点击此处
             </a>
             进行查看。

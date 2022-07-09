@@ -4850,12 +4850,12 @@ var fixedScroll =__etcpack__scope_args__.default;
 
 
     let pages = {
-        idea: () => window.__etcpack__getLazyBundle('./build/main@v0.1.2-bundle1.js','33'),
-        "recursion-and-divide": () => window.__etcpack__getLazyBundle('./build/main@v0.1.2-bundle2.js','34'),
-        "dynamic-programming": () => window.__etcpack__getLazyBundle('./build/main@v0.1.2-bundle3.js','35'),
-        "greedy-algorithm": () => window.__etcpack__getLazyBundle('./build/main@v0.1.2-bundle4.js','36'),
-        "backtracking-method": () => window.__etcpack__getLazyBundle('./build/main@v0.1.2-bundle5.js','37'),
-        "branch-and-bound": () => window.__etcpack__getLazyBundle('./build/main@v0.1.2-bundle6.js','38')
+        idea: () => window.__etcpack__getLazyBundle('./build/main@v0.1.3-bundle1.js','33'),
+        "recursion-and-divide": () => window.__etcpack__getLazyBundle('./build/main@v0.1.3-bundle2.js','34'),
+        "dynamic-programming": () => window.__etcpack__getLazyBundle('./build/main@v0.1.3-bundle3.js','35'),
+        "greedy-algorithm": () => window.__etcpack__getLazyBundle('./build/main@v0.1.3-bundle4.js','36'),
+        "backtracking-method": () => window.__etcpack__getLazyBundle('./build/main@v0.1.3-bundle5.js','37'),
+        "branch-and-bound": () => window.__etcpack__getLazyBundle('./build/main@v0.1.3-bundle6.js','38')
     };
 
     __etcpack__scope_bundle__.default= {
